@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<title>Мошенська О. ІП-03, лаб.5</title>
+</head>
+<body>
+	<main>
+		<div id="firstTask">
+			<form id="form">
+				<h3>Форма для заповнення</h3>
+				<fieldset>
+							<div>
+		            <input id="name" placeholder="ПІБ" type="text">
+		            <span class="alert" style="display: none;"><br>Помилка. Допустиме значення: ТТТТТТ Т.Т.</span>
+		          </div>
+		          <div>
+		            <input id="variant" placeholder="Варіант" type="number">
+		            <span class="alert" style="display: none;"><br>Помилка. Допустиме значення: ЧЧ</span>
+		          </div>
+		          <div>
+		            <input id="phone" placeholder="Телефон" type="text">
+		            <span class="alert" style="display: none;"><br>Помилка. Допустиме значення: (ЧЧЧ)-ЧЧЧ-ЧЧ-ЧЧ</span>
+		          </div>
+		          <div>
+		            <input id="faculty" placeholder="Факультет" type="text">
+		            <span class="alert" style="display: none;"><br>Помилка. Допустиме значення: ТТТТ</span>
+		          </div>
+		          <div>
+		            <input id="address" placeholder="Адреса" type="text">
+		            <span class="alert" style="display: none;"><br>Помилка. Допустиме значення: м. ЧЧЧЧЧЧ</span>
+		          </div>
+		          
+				</fieldset>
+				<button type="submit" class="btn-login">Підтвердити</button>
+			</form>
+		</div>
+		<div id="secondTask">
+			<input type="color" id="color">
+			<table id="table"></table>
+		</div>
+	</main>
+</body>
+</html>
