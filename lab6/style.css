@@ -1,0 +1,43 @@
+#container {
+	text-align: center;
+}
+
+body {
+	background-color: #5E5D54;
+	font-family: "American Typewriter", serif;
+	font-size: 1.2em;
+}
+
+table {
+	width: 100%;
+	border: 3px solid #5E5B38;
+	border-collapse: collapse;
+	background-color: #E3E1CA;
+
+}
+
+tr:nth-child(2n+2) {
+	background-color: #DFD784;
+}
+
+td {
+	border: 2px solid #5E5B38;
+}
+
+button {
+	padding: 10px;
+	font-family: "American Typewriter", serif;
+	font-size: 1.2em;
+	border: none;
+	background-color: #E3E1CA;
+}
+
+button:hover {
+	background-color: #DFD784;
+	border: none;
+}
+
+h1 {
+	font-size: 1.1em;
+	color: #BAB46E;
+}
