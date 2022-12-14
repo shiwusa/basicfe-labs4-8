@@ -1,0 +1,505 @@
+html, body, ul {
+	margin: 0;
+}
+
+body{
+	font-family: "Chakra Petch", monospace ;
+}
+
+#container {
+  position: relative;
+}
+
+#main-page {
+	background-image: url('./assets/img3.jpg');
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: absolute;
+}
+
+#additional-bar {
+	background-color: #200524;
+	color: #7A797F;
+}
+
+#additional-bar #info {
+  display: inline-block;
+  margin-left: 10%;
+  width: 40%;
+}
+
+#additional-bar #icons {
+  display: inline-block;
+  margin-right: 10%;
+  width: 39%;
+  text-align: right;
+}
+
+
+.fa {
+	padding-right:2%;
+}
+
+
+header {
+	background-color: rgba(122, 121, 127, 0.1);
+	min-height: 10vh;
+}
+
+#logo {
+  font-size: 1.5em;
+  width: 20% ;
+	margin-left: 10%;
+  display: inline-block;
+}
+
+.headerElement {
+	font-size: 1.2em;
+	color: #37FA91;
+  text-shadow:
+    0 0 5px #37FA91,
+    0 0 10px #37FA91,
+    0 0 20px #37FA91,
+    0 0 40px #78737A,
+    0 0 80px #78737A,
+    0 0 90px #78737A,
+    0 0 100px #78737A,
+    0 0 150px #78737A;
+	display: inline-block;
+}
+
+.blinking {
+	animation: blink infinite 1.5s;
+}
+
+@keyframes blink {
+  10% {
+    color: purple;
+    opacity: 0;
+  }
+  11% {
+    color: #fff;
+    opacity: 1;
+  }
+  18% {
+    color: purple;
+    opacity: 0;
+  }
+  19% {
+    color: #fff;
+    opacity: 1;
+  }
+}
+
+nav {
+	min-width: 59%;
+  margin-right: 10%;
+}
+
+ul {
+	height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+li {
+	padding-left: 5%;
+	display: inline;
+}
+
+li:hover {
+	cursor: pointer;
+	color: #7A797F;
+  text-shadow:
+    0 0 5px #7A797F,
+    0 0 10px #7A797F,
+    0 0 20px #7A797F,
+    0 0 40px #81717E,
+    0 0 80px #81717E,
+    0 0 90px #81717E,
+    0 0 100px #81717E,
+    0 0 150px #81717E;
+    transition: 0.5s;
+}
+
+#content {
+	width: 40%;
+	margin-left: 10%;
+	margin-top: 15%;
+	color: #7A797F;
+}
+
+
+#content button:hover {
+  font-family: "Chakra Petch", monospace;
+  cursor: pointer;
+  box-shadow: 
+    0 2px 4px rgba(0,0,0, 0.6), 
+    4px 2px 6px rgba(0,0,0, 0.3), 
+    4px 6px 6px rgba(219, 67, 105, 0.3), 
+    0 0 7px 4px rgba( 181, 32, 86, 0.6), 
+    inset 0 2px 4px rgba(0,0,0, 0.6), 
+    inset 4px 2px 8px rgba(0,0,0, 0.3), 
+    inset 4px 6px 6px rgba(219, 67, 105, 0.3), 
+    inset 0 0 7px 4px rgba( 181, 32, 86, 0.6);
+    transition: 1s;
+}
+
+.buttons {
+   cursor: pointer;
+	font-family: "Chakra Petch", monospace;
+  padding: 1rem 1.25rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #37FA91;
+  border: 2px solid;
+  border-radius: 4px;
+  background-color: transparent;
+  box-shadow: 
+    0 1px 2px rgba(0,0,0, 0.6), 
+    2px 1px 4px rgba(0,0,0, 0.3), 
+    2px 4px 3px rgba(219, 67, 105, 0.3), 
+    0 0 7px 2px rgba( 181, 32, 86, 0.6), 
+    inset 0 1px 2px rgba(0,0,0, 0.6), 
+    inset 2px 1px 4px rgba(0,0,0, 0.3), 
+    inset 2px 4px 3px rgba(219, 67, 105, 0.3), 
+    inset 0 0 7px 2px rgba( 181, 32, 86, 0.6);
+  animation: flickering 5s infinite;
+}
+
+@keyframes flickering {
+  0% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+  
+  2% {
+    border-color:#710D46;
+    opacity: 1;
+  }
+  
+  4% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+  
+  8% {
+    border-color: #710D46;
+    opacity: 1;
+  }
+  
+  28% {
+    border-color: #710D46;
+    opacity: 1;
+  }
+  
+  30% {
+    border-color: transparent;
+    opacity: 0.2;
+  }
+  
+  36% {
+    border-color: #710D46;
+    opacity: 1;
+  }
+  
+  100% {
+    border-color: #710D46;
+    opacity: 1;
+  }
+	
+}
+
+#content p {
+  margin-top: 0;
+	font-size: 1.5em;
+}
+
+
+
+#appointment {
+  background-color: #81717E;
+  margin-left: 10%;
+  margin-right: 10%;
+  position: absolute;
+  min-width: 80vw;
+  bottom: -10vh;
+  animation: glow 5s infinite ;
+}
+
+@keyframes glow{
+  0%{
+  box-shadow: 5px 5px 20px rgb( 181, 32, 86),-5px -5px 20px rgb( 181, 32, 86);}
+  
+  50%{
+  box-shadow: 5px 5px 20px rgb(122, 121, 127),-5px -5px 20px rgb(122, 121, 127)
+  }
+  100%{
+  box-shadow: 5px 5px 20px rgb( 181, 32, 86),-5px -5px 20px rgb( 181, 32, 86)
+  }
+}
+
+#appointment fieldset {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 100%;
+  display: inline-block;
+}
+
+#appointment fieldset div {
+  display: inline-block;
+  text-align: left;
+  margin: 4%;
+}
+
+label {
+   color: #200524;
+   font-size: 1.2em;
+}
+
+#appointment fieldset input {
+  height: 40px;
+  background-color: #200524;
+  border-radius: 4px;
+  border: 0;
+  padding-left: 9px;
+}
+
+#form {
+  display: inline-block;
+  width: 80%;
+  text-align: center;
+}
+
+#appointment #forButton {
+  display: inline-block;
+  text-align: center;
+  width: 19%;
+  margin: 5% 0;
+}
+
+#about {
+  position: absolute;
+  top: 100vh;
+  z-index: -1;
+  width: 100vw;
+  background: linear-gradient(180deg, rgba(32,5,36,1) 35%, rgba(33,27,53,1) 75%);
+  min-height: 100vh;
+}
+#about img {
+  min-height: 90vh;
+  float: left;
+  max-width: 59%;
+}
+
+#main-info {
+  min-height: 90vh;
+  margin-top: 10vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+#main-text {
+  padding-top: 25vh;
+  color: #DDD1DF;
+  position: relative;
+  float: right;
+  min-height: 65vh;
+  max-width: 41%;
+}
+
+#main-text h2, #services-info h1, #team-info h1 {
+  margin: 0;
+  color: #4F1E9E;
+  font-size: 2.5em;
+  text-shadow:
+          0 0 5px #B075A3,
+          0 0 10px #B075A3,
+          0 0 20px #B075A3,
+          0 0 40px #481D89,
+          0 0 80px #481D89,
+          0 0 90px #481D89,
+          0 0 100px #481D89,
+          0 0 150px #481D89;
+}
+
+
+#main-text h3 {
+  margin: 0;
+}
+
+#main-text #statistics {
+  animation: glow 5s infinite ;
+  padding-right: 0;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: #B075A3;
+  text-align: center;
+}
+#statistics .data span {
+  font-size: 1.7em;
+}
+
+#statistics .data  {
+  display: inline-block;
+  margin-right: 10%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+#statistics .data:last-child  {
+  margin-right: 0;
+}
+
+#services-info {
+  position: absolute;
+  top: 199vh;
+  min-height: 100vh;
+  background-color: #211B35;
+  min-width: 100vw;
+  z-index: -2;
+  text-align: center;
+}
+
+#services-info h3, #team-info p {
+  color: #DDD1DF;
+  font-size: 1.3em;
+  margin: 0;
+}
+
+#services-info h1 {
+  margin-bottom: 3%;
+}
+
+.grid-container {
+  height: 50vh;
+  width: 80vw;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5%;
+  align-content: space-between;
+}
+
+.alt-text {
+  text-align: left;
+  display: inline-block;
+  float: right;
+  max-width: 60%;
+  color: #DDD1DF;
+}
+
+#services-info .alt-text h3 {
+  margin-top: 0;
+  font-size: 1.6em;
+  color: #B075A3;
+  text-shadow:
+          0 0 5px #481D89,
+          0 0 10px #481D89,
+          0 0 20px #481D89,
+          0 0 40px #481D89,
+          0 0 80px #481D89
+}
+
+.grid-item img {
+  max-width: 30%;
+  display: inline;
+  float: left;
+  margin-right: 2%;
+}
+
+#services-container {
+  margin-top: 9%;
+}
+
+#team-page {
+  position: absolute;
+  top: 299vh;
+  width: 100vw;
+  background: rgb(32,5,36);
+  background: linear-gradient(0deg, rgba(32,5,36,1) 35%, rgba(33,27,53,1) 100%);
+}
+
+
+
+#container-evas{
+  margin-right: 10%;
+  margin-left: 10%;
+}
+#evas-cards {
+  text-align: center;
+  width: 60%;
+  display: inline-block;
+}
+#team-info {
+
+  width: 39%;
+  display: inline-block;
+  vertical-align: top;
+}
+#team-info button {
+  margin-top: 10%;
+}
+#team-info h1 {
+  margin-bottom: 4%;
+}
+
+.evas {
+  height: 25vh;
+
+}
+
+.evas:hover {
+  animation: glow 5s infinite ;
+  transition: 1s;
+  -webkit-filter: grayscale(100%);;
+}
+
+#evas-cards {
+  text-align: right;
+}
+#evas-cards .overlay {
+  margin: 1%;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.text h1 {
+  margin: 0;
+  color: #B075A3;
+  text-shadow:
+          0 0 5px #481D89,
+          0 0 10px #481D89,
+          0 0 20px #481D89,
+          0 0 40px #481D89,
+          0 0 80px #481D89;
+  font-size: 1em;
+}
+.overlay:hover .text {
+  opacity: 1;
+}
+
+
