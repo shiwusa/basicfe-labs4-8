@@ -6,38 +6,30 @@ body{
 	font-family: "Chakra Petch", monospace ;
 }
 
-#container {
-  position: relative;
-}
 
 #main-page {
-	background-image: url('./assets/img3.jpg');
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  background-image: url('./assets/img3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
-  min-width: 100vw;
-  position: absolute;
+}
+#background-bar {
+  background-color: #200524;
+  color: #7A797F;
 }
 
 #additional-bar {
-	background-color: #200524;
-	color: #7A797F;
-}
-
-#additional-bar #info {
-  display: inline-block;
-  margin-left: 10%;
-  width: 40%;
+    margin-left: 10%;
+    width: 80%;
+    display: inline-grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
 }
 
 #additional-bar #icons {
-  display: inline-block;
-  margin-right: 10%;
-  width: 39%;
   text-align: right;
 }
-
 
 .fa {
 	padding-right:2%;
@@ -45,21 +37,25 @@ body{
 
 
 header {
-	background-color: rgba(122, 121, 127, 0.1);
-	min-height: 10vh;
+	background-color: rgba(55, 40, 61, 0.1);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.spacing {
+  margin-left: 10%;
+  display: inline-grid;
+  width: 80%;
+  grid-template-columns: 20% 80%;
+  align-items: center;
+}
 #logo {
   font-size: 1.5em;
-  width: 20% ;
-	margin-left: 10%;
-  display: inline-block;
 }
 
 .headerElement {
 	font-size: 1.2em;
 	color: #37FA91;
-  text-shadow:
+    text-shadow:
     0 0 5px #37FA91,
     0 0 10px #37FA91,
     0 0 20px #37FA91,
@@ -94,15 +90,7 @@ header {
   }
 }
 
-nav {
-	min-width: 59%;
-  margin-right: 10%;
-}
-
 ul {
-	height: 100%;
-  list-style-type: none;
-  margin: 0;
   padding: 0;
   text-align: right;
 }
@@ -134,27 +122,11 @@ li:hover {
 	color: #7A797F;
 }
 
-
-#content button:hover {
-  font-family: "Chakra Petch", monospace;
-  cursor: pointer;
-  box-shadow: 
-    0 2px 4px rgba(0,0,0, 0.6), 
-    4px 2px 6px rgba(0,0,0, 0.3), 
-    4px 6px 6px rgba(219, 67, 105, 0.3), 
-    0 0 7px 4px rgba( 181, 32, 86, 0.6), 
-    inset 0 2px 4px rgba(0,0,0, 0.6), 
-    inset 4px 2px 8px rgba(0,0,0, 0.3), 
-    inset 4px 6px 6px rgba(219, 67, 105, 0.3), 
-    inset 0 0 7px 4px rgba( 181, 32, 86, 0.6);
-    transition: 1s;
-}
-
 .buttons {
    cursor: pointer;
-	font-family: "Chakra Petch", monospace;
+  font-family: "Chakra Petch", monospace;
   padding: 1rem 1.25rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-decoration: none;
   color: #37FA91;
   border: 2px solid;
@@ -216,20 +188,24 @@ li:hover {
 }
 
 #content p {
-  margin-top: 0;
-	font-size: 1.5em;
+    margin-top: 0;
+	font-size: 1.3rem;
 }
-
-
 
 #appointment {
   background-color: #81717E;
+  width: 80vw;
   margin-left: 10%;
-  margin-right: 10%;
-  position: absolute;
-  min-width: 80vw;
-  bottom: -10vh;
+  margin-top: -10vh;
   animation: glow 5s infinite ;
+}
+
+#back-fix {
+  position: absolute;
+  background-color: #200524;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
 }
 
 @keyframes glow{
@@ -248,78 +224,73 @@ li:hover {
   margin: 0;
   border: 0;
   padding: 0;
-  width: 100%;
-  display: inline-block;
 }
 
 #appointment fieldset div {
   display: inline-block;
   text-align: left;
-  margin: 4%;
+  margin: 2% 5% 2% 3%;
 }
+
 
 label {
    color: #200524;
-   font-size: 1.2em;
+   font-size: 1.2rem;
 }
 
 #appointment fieldset input {
-  height: 40px;
   background-color: #200524;
   border-radius: 4px;
   border: 0;
-  padding-left: 9px;
+  padding: 5%;
+  color: #78737A;
 }
 
 #form {
-  display: inline-block;
-  width: 80%;
   text-align: center;
 }
 
 #appointment #forButton {
-  display: inline-block;
   text-align: center;
-  width: 19%;
-  margin: 5% 0;
+  padding: 1% 0 3% 0;
 }
 
+
 #about {
-  position: absolute;
-  top: 100vh;
-  z-index: -1;
-  width: 100vw;
   background: linear-gradient(180deg, rgba(32,5,36,1) 35%, rgba(33,27,53,1) 75%);
-  min-height: 100vh;
 }
+
 #about img {
-  min-height: 90vh;
-  float: left;
+  height: 90vh;
+  object-fit: cover;
   max-width: 59%;
 }
 
+#text-spacing {
+  padding: 2%;
+}
+
 #main-info {
-  min-height: 90vh;
-  margin-top: 10vh;
+  position: relative;
   margin-left: 10%;
   margin-right: 10%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#container-scalability {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
 
 #main-text {
-  padding-top: 25vh;
+  padding-top: 10%;
   color: #DDD1DF;
-  position: relative;
-  float: right;
-  min-height: 65vh;
   max-width: 41%;
 }
 
 #main-text h2, #services-info h1, #team-info h1 {
   margin: 0;
   color: #4F1E9E;
-  font-size: 2.5em;
   text-shadow:
           0 0 5px #B075A3,
           0 0 10px #B075A3,
@@ -338,37 +309,28 @@ label {
 
 #main-text #statistics {
   animation: glow 5s infinite ;
-  padding-right: 0;
-  display: inline-block;
   position: absolute;
   bottom: 0;
-  right: 0;
-  width: 100%;
+  width: 41%;
   background-color: #B075A3;
   text-align: center;
 }
+
 #statistics .data span {
   font-size: 1.7em;
 }
 
 #statistics .data  {
   display: inline-block;
-  margin-right: 10%;
+  margin-right: 5%;
+  margin-left: 5%;
   padding-top: 3%;
   padding-bottom: 3%;
 }
 
-#statistics .data:last-child  {
-  margin-right: 0;
-}
-
 #services-info {
-  position: absolute;
-  top: 199vh;
   min-height: 100vh;
   background-color: #211B35;
-  min-width: 100vw;
-  z-index: -2;
   text-align: center;
 }
 
@@ -383,14 +345,9 @@ label {
 }
 
 .grid-container {
-  height: 50vh;
-  width: 80vw;
-  margin-left: 10%;
-  margin-right: 10%;
   display: inline-grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5%;
-  align-content: space-between;
+  grid-template-columns: repeat(auto-fill, minmax(30vh, 1fr));
+  grid-gap: 5vh;
 }
 
 .alt-text {
@@ -421,20 +378,18 @@ label {
 }
 
 #services-container {
-  margin-top: 9%;
+  padding-top: 9%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 #team-page {
-  position: absolute;
-  top: 299vh;
-  width: 100vw;
-  background: rgb(32,5,36);
   background: linear-gradient(0deg, rgba(32,5,36,1) 35%, rgba(33,27,53,1) 100%);
 }
 
-
-
-#container-evas{
+#container-evas {
+  margin-top: 10vh;
+  display: inline-flex;
   margin-right: 10%;
   margin-left: 10%;
 }
@@ -444,7 +399,6 @@ label {
   display: inline-block;
 }
 #team-info {
-
   width: 39%;
   display: inline-block;
   vertical-align: top;
@@ -457,8 +411,7 @@ label {
 }
 
 .evas {
-  height: 25vh;
-
+  max-height: 25vh;
 }
 
 .evas:hover {
@@ -487,7 +440,7 @@ label {
   transition: all 0.8s ease;
 }
 
-.text h1 {
+.text {
   margin: 0;
   color: #B075A3;
   text-shadow:
@@ -496,10 +449,9 @@ label {
           0 0 20px #481D89,
           0 0 40px #481D89,
           0 0 80px #481D89;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 .overlay:hover .text {
   opacity: 1;
 }
-
 
