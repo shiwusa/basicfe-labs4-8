@@ -263,7 +263,7 @@ label {
 #about img {
   height: 90vh;
   object-fit: cover;
-  max-width: 59%;
+  width: 50%;
 }
 
 #text-spacing {
@@ -311,7 +311,8 @@ label {
   animation: glow 5s infinite ;
   position: absolute;
   bottom: 0;
-  width: 41%;
+  right: 0;
+  width: 50%;
   background-color: #B075A3;
   text-align: center;
 }
