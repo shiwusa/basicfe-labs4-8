@@ -1,242 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-        <title>Lab8. Web-page layout</title>
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chakra+Petch" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    </head>
-    <body>
-
-            <div id="main-page">
-                <div id="background-bar">
-                    <div id="additional-bar">
-                        <div id="info">Phone: +380-Acx-23AS-45B Email: it@evangelion.com</div>
-                        <div id="icons">
-                            <i class="fa fa-cloud"></i>
-                            <i class="fa fa-heart"></i>
-                            <i class="fa fa-file"></i>
-                            <i class="fa fa-bars"></i>
-                        </div>
-                    </div>
-                </div>
-                <header>
-                    <div class="spacing">
-                    <div id="logo" class="headerElement">
-                        <p>NE<span class="blinking">R</span>V</p>
-                    </div>
-                    <nav class="headerElement">
-                        <ul>
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Services</li>
-                            <li>Portfolio</li>
-                            <li>Pricing</li>
-                            <li>Contact</li>
-                        </ul>
-                    </nav>
-                    </div>
-                </header>
-                <div id="content">
-                    <span>エヴァンゲリオン</span>
-                    <p>"It Is Simply The Duty Of The Elite To Protect The Ignorant Masses" - Asuka Langley</p>
-                    <button class="buttons">Learn more</button>
-                </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <title>Lab8. Web-page layout</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chakra+Petch">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section id="main-page">
+    <div id="background-bar">
+        <div id="additional-bar">
+            <div id="info">Phone: +380-Acx-23AS-45B Email: it@evangelion.com</div>
+            <div id="icons">
+                <i class="fa fa-cloud"></i>
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-file"></i>
+                <i class="fa fa-bars"></i>
             </div>
-
-
-            <div id="scalable-for-mobiles">
-                <div id="back-fix">
-
+        </div>
+    </div>
+    <header>
+        <div class="spacing">
+            <div id="logo" class="headerElement">
+                <p>NE<span class="blinking">R</span>V</p>
+            </div>
+            <nav class="headerElement">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Portfolio</li>
+                    <li>Pricing</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="content">
+        <span>エヴァンゲリオン</span>
+        <p>"It Is Simply The Duty Of The Elite To Protect The Ignorant Masses" - Asuka Langley</p>
+        <button class="buttons">Learn more</button>
+    </div>
+</section>
+<div id="scalable-for-mobiles">
+    <div id="back-fix"></div>
+    <section id="appointment">
+        <div id="form">
+            <fieldset>
+                <div>
+                    <label for="name">Name</label>
+                    <br>
+                    <input id="name" placeholder="Your name" type="text">
                 </div>
-                <div id="appointment">
-                    <div id="form">
-                        <fieldset>
-                            <div>
-                                <label for="name">Name</label><br />
-                                <input id="name" placeholder="Your name" type="text" />
-                            </div>
-                            <div>
-                                <label for="phone">Phone number</label><br />
-                                <input id="phone" placeholder="Phone" type="text" />
-                            </div>
-
-                            <div>
-                                <label>
-                                    Choose a pilot<br />
-                                    <input list="characters" placeholder="Pilot`s name" name="characters" />
-                                </label>
-                                <datalist id="characters">
-                                    <option value="Asuka Langley Sohryu"> </option>
-                                    <option value="Rei Ayanami"> </option>
-                                    <option value="Shinji Ikari"> </option>
-                                    <option value="Kaworu Nagisa"> </option>
-                                    <option value="Mari Makinami Illustrious"> </option>
-                                </datalist>
-                            </div>
-
-                            <div>
-                                <label>
-                                    What do you need?<br />
-                                    <input list="services" placeholder="Services" name="services" />
-                                </label>
-                                <datalist id="services">
-                                    <option value="Defeat an angel"> </option>
-                                    <option value="Mental support"> </option>
-                                    <option value="A friend"> </option>
-                                </datalist>
-                            </div>
-                        </fieldset>
-                    </div>
-                    <div id="forButton">
-                        <button class="buttons">Submit</button>
-                    </div>
+                <div>
+                    <label for="phone">Phone number</label>
+                    <br>
+                    <input id="phone" placeholder="Phone" type="text">
                 </div>
-                <div id="about">
-                    <div id="main-info">
-                        <div id="container-scalability">
-                                <img src="assets/img4.jpg" alt="rey ayanami">
-                            <div id="main-text">
-                                <div id="text-spacing">
-                                    <h3>Welcome to NERV</h3>
-                                    <h2>Let us protect you from the Angels</h2>
-                                    セカンドインパクトとして知られる世界的な大変動から15年後の2015年、ティーンエイジャーの碇シンジは、疎遠になった父碇ゲンドウによって、未来都市第3東京に召喚された。
-                                    シンジは、国連軍が、死海文書によって目覚めが予言された巨大な怪物種族の
-                                    1 つである天使と戦っているのを目撃します。 天使のほぼ不可侵の力場のために、ネルフの巨大なエヴァンゲリオン バイオ マシンは、パイロットの神経系に同期し
-                                    、独自の力場を所有しており、天使が人類を全滅させないようにすることができる唯一の武器です。
-                                </div>
-                                <div id="statistics">
-                                    <div class="data">
-                                        <span>15</span><br>
-                                        YEARS OF EXPERIENCE
-                                    </div>
-                                    <div class="data">
-                                        <span>2984</span><br>
-                                        DEFEATED ANGELS
-                                    </div>
-                                    <div class="data">
-                                        <span>10000+</span><br>
-                                        CUSTOMERS
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div>
+                    <label>
+                        Choose a pilot<br>
+                        <input list="characters" placeholder="Pilot`s name" name="characters">
+                    </label>
+                    <datalist id="characters">
+                        <option value="Asuka Langley Sohryu">
+                        </option>
+                        <option value="Rei Ayanami">
+                        </option>
+                        <option value="Shinji Ikari">
+                        </option>
+                        <option value="Kaworu Nagisa">
+                        </option>
+                        <option value="Mari Makinami Illustrious">
+                        </option>
+                    </datalist>
                 </div>
-                <div id="services-info">
-                    <div id="services-container">
-                        <h3>Services</h3>
-                        <h1>Defeated Angels</h1>
-                        <div class="grid-container">
-                            <div class="grid-item">
-                                <img src="assets/ang1.png" alt="Sahaquiel">
-                                <div class="alt-text">
-                                    <h3>Sahaquiel</h3>
-                                    <span class="caption">天使は巨大で奇妙な形をした生き物です。
-                        それは細長い体を持ち、3 つの目のようなマーキング (中央に 1 つ、
-                        6 つの「まつげ」と思われるものに囲まれ、体の両端に 1 つ) と、両端から放射状に突き出た
-                        3 つの茎のような成長物を持っています。</span>
-                                </div>
-
-                            </div>
-                            <div class="grid-item">
-                                <img src="assets/ang2.png" alt="Leliel">
-                                <div class="alt-text">
-                                    <h3>Leliel</h3>
-                                    <span class="caption">レリエルは、高次物理学理論（抽象数学）でしか説明できないポケット次元に存在する、極めて奇妙な存在です。</span>
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <img src="assets/ang3.png" alt="Matarael">
-                                <div class="alt-text">
-                                    <h3>Matarael</h3>
-                                    <span class="caption">第3東京が停電した際に襲来する第9の使徒。マタラエルは巨大なオピリノイドのような実体であり、
-                        4 本の非常に大きな脚 (ほとんどの高層ビルよりも高い) と比較的小さな体のコアを備えています。</span>
-                                </div>
-                            </div>
-
-                            <div class="grid-item">
-                                <img src="assets/ang4.png" alt="Adam">
-                                <div class="alt-text">
-                                    <h3>Adam</h3>
-                                    <span class="caption">第1の天使、
-                        地球の2つの生命の種の最初であり、第17の天使の行動を通じて間接的に、
-                        しかし第18の天使のメンバー（具体的にはリリン、 碇シンジ）。</span>
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <img src="assets/ang5.png" alt="Israfel">
-                                <div class="alt-text">
-                                    <h3>Israfel</h3>
-                                    <span class="caption">TVシリーズや漫画に登場する第7の天使。 ガギールが先行し、サンダルフォンが後を継いだ。</span>
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <img src="assets/ang6.png" alt="Arael">
-                                <div class="alt-text">
-                                    <h3>Arael</h3>
-                                    <span class="caption">15番目の天使です。 Arael は、A.T. を適用して人間の精神を直接攻撃する能力で知られています。
-                        分野。 その極端な範囲と相まって、Arael は最も危険な天使の 1 つでした。</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div>
+                    <label>
+                        What do you need?<br>
+                        <input list="services" placeholder="Services" name="services">
+                    </label>
+                    <datalist id="services">
+                        <option value="Defeat an angel">
+                        </option>
+                        <option value="Mental support">
+                        </option>
+                        <option value="A friend">
+                        </option>
+                    </datalist>
                 </div>
-
-                <div id="team-page">
-                    <div id="container-evas">
-                        <div id="team-info">
-                            <h1>Our Evas</h1>
-                            <p>
-                                エヴァンゲリオンは、神のような力を持つ巨大な生きたヒューマノイ
-                                ドであり、エヴァンゲリオン フランチャイズの名前の由来となっています。
-                            </p>
-                            <button class="buttons">
-                                View all
-                            </button>
+            </fieldset>
+        </div>
+        <div id="forButton">
+            <button class="buttons">Submit</button>
+        </div>
+    </section>
+    <section id="about">
+        <div id="main-info">
+            <div id="container-scalability">
+                <img src="assets/img4.jpg" alt="rey ayanami">
+                <div id="main-text">
+                    <div id="text-spacing">
+                        <h3>Welcome to NERV</h3>
+                        <h2>Let us protect you from the Angels</h2>
+                        セカンドインパクトとして知られる世界的な大変動から15年後の2015年、ティーンエイジャ
+                        ーの碇シンジは、疎遠になった父碇ゲンドウによって、未来都市第3東京に召喚された。
+                        シンジは、国連軍が、死海文書によって目覚めが予言された巨大な怪物種族の
+                        1 つである天使と戦っているのを目撃します。 天使のほぼ不可侵の力場のために、ネルフの巨大なエ
+                        ヴァンゲリオン バイオ マシンは、パイロットの神経系に同期し
+                        、独自の力場を所有しており、天使が人類を全滅させないようにすることができる唯一の武器です。
+                    </div>
+                    <div id="statistics">
+                        <div class="data">
+                            <span>15</span>
+                            <br>
+                            YEARS OF EXPERIENCE
                         </div>
-                        <div id="evas-cards">
-                            <div class="overlay">
-                                <span class = "text">エヴァンゲリオン初号機</span>
-                                <img class="evas" src="assets/ev1.jpg" alt="eva`s icon">
-                            </div>
-                            <div class="overlay">
-                                <span class = "text">エヴァンゲリオン初号機</span>
-                                <img class="evas" src="assets/ev2.jpg" alt="eva`s icon">
-                            </div>
-
-                            <div class="overlay">
-                                <span class = "text">>エヴァンゲリオン初号機</span>
-                                <img class="evas" src="assets/ev3.jpg" alt="eva`s icon">
-                            </div>
-
-                            <div class="overlay">
-                                <span class = "text">エヴァンゲリオン初号機</span>
-                                <img class="evas" src="assets/ev4.jpg" alt="eva`s icon">
-                            </div>
-
-                            <div class="overlay">
-                                <span class = "text">エヴァンゲリオン初号機</span>
-                                <img class="evas" src="assets/ev5.jpg" alt="eva`s icon">
-                            </div>
-
-                            <div class="overlay">
-                                <span class = "text">エヴァンゲリオン初号機</span>
-                                <img class="evas" src="assets/ev6.jpg" alt="eva`s icon">
-                            </div>
+                        <div class="data">
+                            <span>2984</span>
+                            <br>
+                            DEFEATED ANGELS
                         </div>
-
-
+                        <div class="data">
+                            <span>10000+</span>
+                            <br>
+                            CUSTOMERS
+                        </div>
                     </div>
                 </div>
             </div>
-
-
-
-        
-    </body>
+        </div>
+    </section>
+    <section id="services-info">
+        <div id="services-container">
+            <h3>Services</h3>
+            <h1>Defeated Angels</h1>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="assets/ang1.png" alt="Sahaquiel">
+                    <div class="alt-text">
+                        <h3>Sahaquiel</h3>
+                        <span class="caption">天使は巨大で奇妙な形をした生き物です。
+                            それは細長い体を持ち、3 つの目のようなマーキング (中央に 1 つ、
+                            6 つの「まつげ」と思われるものに囲まれ、体の両端に 1 つ) と、両端から放射状に突き出た
+                            3 つの茎のような成長物を持っています。</span>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="assets/ang2.png" alt="Leliel">
+                    <div class="alt-text">
+                        <h3>Leliel</h3>
+                        <span class="caption">レリエルは、高次物理学理論（抽象数学）でしか説明できないポケット次元に存在する
+                            、極めて奇妙な存在です。</span>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="assets/ang3.png" alt="Matarael">
+                    <div class="alt-text">
+                        <h3>Matarael</h3>
+                        <span class="caption">第3東京が停電した際に襲来する第9の使徒。マタラエルは巨大なオピリノイドのような実体であり、
+                            4 本の非常に大きな脚 (ほとんどの高層ビルよりも高い) と比較的小さな体のコアを備えています。</span>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="assets/ang4.png" alt="Adam">
+                    <div class="alt-text">
+                        <h3>Adam</h3>
+                        <span class="caption">第1の天使、地球の2つの生命の種の最初であり、第17の天使の行動を通じて間接的に、
+                            しかし第18の天使のメンバー（具体的にはリリン、 碇シンジ）。</span>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="assets/ang5.png" alt="Israfel">
+                    <div class="alt-text">
+                        <h3>Israfel</h3>
+                        <span class="caption">TVシリーズや漫画に登場する第7の天使。 ガギールが先行し、サンダルフォンが後を継いだ。</span>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="assets/ang6.png" alt="Arael">
+                    <div class="alt-text">
+                        <h3>Arael</h3>
+                        <span class="caption">15番目の天使です。 Arael は、A.T. を適用して人間の精神を直接攻撃する能力で知られています。
+                            分野。 その極端な範囲と相まって、Arael は最も危険な天使の 1 つでした。</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="team-page">
+        <div id="container-evas">
+            <div id="team-info">
+                <h1>Our Evas</h1>
+                <p>
+                    エヴァンゲリオンは、神のような力を持つ巨大な生きたヒューマノイ
+                    ドであり、エヴァンゲリオン フランチャイズの名前の由来となっています。
+                </p>
+                <button class="buttons">
+                    View all
+                </button>
+            </div>
+            <div id="evas-cards">
+                <div class="overlay">
+                    <span class="text">エヴァンゲリオン初号機</span>
+                    <img class="evas" src="assets/ev1.jpg" alt="eva`s icon">
+                </div>
+                <div class="overlay">
+                    <span class="text">エヴァンゲリオン初号機</span>
+                    <img class="evas" src="assets/ev2.jpg" alt="eva`s icon">
+                </div>
+                <div class="overlay">
+                    <span class="text">&gt;エヴァンゲリオン初号機</span>
+                    <img class="evas" src="assets/ev3.jpg" alt="eva`s icon">
+                </div>
+                <div class="overlay">
+                    <span class="text">エヴァンゲリオン初号機</span>
+                    <img class="evas" src="assets/ev4.jpg" alt="eva`s icon">
+                </div>
+                <div class="overlay">
+                    <span class="text">エヴァンゲリオン初号機</span>
+                    <img class="evas" src="assets/ev5.jpg" alt="eva`s icon">
+                </div>
+                <div class="overlay">
+                    <span class="text">エヴァンゲリオン初号機</span>
+                    <img class="evas" src="assets/ev6.jpg" alt="eva`s icon">
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
 </html>
